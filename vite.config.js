@@ -1,6 +1,10 @@
+// vite.config.js
 export default {
     server: {
-      open: true
-    }
+      // Pour afficher toutes les erreurs de manière détaillée
+      hmr: true,  // Hot Module Replacement (rafraîchissement rapide) activé
+    },
+    build: {
+      sourcemap: true, // Active les sourcemaps pour déboguer plus facilement
+    },
   };
-  
