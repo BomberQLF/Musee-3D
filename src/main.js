@@ -1,11 +1,10 @@
 import "./style.css";
-import * as THREE from "./node_modules/three/build/three.module.js";
-import { loadModel } from "./Components/modelLoader";
-import { createLights } from "./Components/lights";
-import { setupCameraControls } from "./Components/cameraControls";
-import { setupResizeHandler } from "./Components/resizeHandler";
-import { setupKeyboardControls } from "./Components/keyboardControls";
-// import { PointerLockControls } from "three-stdlib";
+import * as THREE from "three";
+import { loadModel } from "../src/Components/modelLoader";
+import { createLights } from "../src/Components/lights";
+import { setupCameraControls } from "../src/Components/cameraControls";
+import { setupResizeHandler } from "../src/Components/resizeHandler";
+import { setupKeyboardControls } from "../src/Components/keyboardControls";
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
