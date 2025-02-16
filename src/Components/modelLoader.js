@@ -1,4 +1,4 @@
-import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { GLTFLoader } from "./node_modules/three/examples/jsm/loaders/GLTFLoader.js";
 
 export function loadModel(url, scene, name) {
   const loader = new GLTFLoader();

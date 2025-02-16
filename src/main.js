@@ -1,5 +1,5 @@
 import "./style.css";
-import * as THREE from "three";
+import * as THREE from "./node_modules/three/build/three.module.js";
 import { loadModel } from "./Components/modelLoader";
 import { createLights } from "./Components/lights";
 import { setupCameraControls } from "./Components/cameraControls";
