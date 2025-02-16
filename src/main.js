@@ -26,7 +26,7 @@ scene.add(ambientLight);
 createLights(scene, 0xffffff, 1, { x: 8, y: 15, z: 15 }, { x: 0, y: 5, z: 0 });
 
 // Importation du modèle 3d
-loadModel("/public/model/Maison_Musee.glb", scene, "Scene-Musee");
+loadModel("../public/model/Maison_Musee.glb", scene, "Scene-Musee");
 
 // APPel de la fonction pour les controles de la cameras
 const controls = setupCameraControls(camera, renderer.domElement);
