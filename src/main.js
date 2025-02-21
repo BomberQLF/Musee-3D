@@ -5,6 +5,7 @@ import { createLights } from "../src/Components/lights";
 import { setupCameraControls } from "../src/Components/cameraControls";
 import { setupResizeHandler } from "../src/Components/resizeHandler";
 import { setupKeyboardControls } from "../src/Components/keyboardControls";
+import { CollisionAdder } from "./Components/collisionAdder";
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -39,9 +40,21 @@ console.log(camera.position);
 // Appel de fonction pour les contrôles clavier
 const updateKeyboardControls = setupKeyboardControls(camera, controls);
 
+// Gestion des collisions
+CollisionAdder(
+  2,
+  2,
+  4,
+  "red",
+  1.7699893335466619,
+  5,
+  119.90159994666706,
+  scene
+);
 // Mise à jour de la scène
 function animateControls() {
-  updateKeyboardControls(); 
+  updateKeyboardControls();
+  console.log(camera.position);
   renderer.render(scene, camera);
 }
 
